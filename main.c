@@ -94,12 +94,9 @@ int main(int argc, char** argv) {
             }
         }
     } while (stop != 1);
-
-    // writefile wyslac ze wszystkie serva na 0
-
+    
     lastFrameID = 0; //The last frame received
 
-    WriteFile(hSerial, bytes_to_send, 5, 0, NULL);
     printf("kalibracja zakonczona");
 
     for (;;) {
